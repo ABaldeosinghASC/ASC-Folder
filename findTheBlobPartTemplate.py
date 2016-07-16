@@ -113,9 +113,10 @@ while (position != -1): # != is the symbol for not equals to
     position = findColorSpot(picture, green)
     print(position)          
     if (position == 0):  # == is the symbol for equals to
-        turnBy(15, "deg")
-        takePicture()
-        forward(1,position)
+        turnBy(45, "deg")
+    else:
+        forward(1,3)
+        
         
         
         
