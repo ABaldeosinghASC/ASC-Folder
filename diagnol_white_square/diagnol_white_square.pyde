@@ -1,19 +1,24 @@
-tacogang = 0
-burritosquad = -1
+from random import *
+
 
 def setup():
     size (1000,1000)
-    background(0, 0, 255)
+    background(255, 255, 255)
 
 def draw():
-    global tacogang
-    global burritosquad
-    background (0, 0, 255)
-    fill(255, 255, 255)
-    stroke(255, 255, 255)
-    rect(tacogang, burritosquad, 50, 50)
-    tacogang = tacogang + 1
-    burritosquad = burritosquad + 1
+    ellipse(mouseX, mouseY, 50, 50)
+    fill(randint(0, 255),randint(0, 255),randint(0, 255)) 
+    noStroke()
+    for i in range(10):
+        x = randrange(0,25)
+        
+        ellipse(mouseX + randint(-50,50), mouseY + randint(-50,50), x, x)
+        fill(randint(0, 255),randint(0, 255),randint(0, 255))
+    
+    
+   
+
+
 
     
     
