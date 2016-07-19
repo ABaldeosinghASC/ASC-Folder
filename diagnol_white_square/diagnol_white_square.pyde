@@ -1,11 +1,12 @@
 from random import *
-
+from math import *
 
 def setup():
     size (1000,1000)
     background(255, 255, 255)
 
 def draw():
+    
     ellipse(mouseX, mouseY, 50, 50)
     fill(randint(0, 255),randint(0, 255),randint(0, 255)) 
     noStroke()
@@ -16,9 +17,8 @@ def draw():
         fill(randint(0, 255),randint(0, 255),randint(0, 255))
     
     
-   
 
 
 
-    
+
     

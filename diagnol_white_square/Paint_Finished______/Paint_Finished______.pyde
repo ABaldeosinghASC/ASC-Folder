@@ -60,7 +60,7 @@ def draw():
     if mouseY < 100:
         if mouseX > 700 and mousePressed < 800:
             theSetColor = 0
-    
+
     elif mouseY > 100:
         if mousePressed and theSetColor == 1: 
             fill(255, 0, 0)
@@ -93,9 +93,5 @@ def draw():
         if mousePressed and theSetColor == 0:
            fill(0, 0, 0)
            ellipse(mouseX, mouseY, 20, 20,)
-           
-           
-           
-
        
-    
+           
