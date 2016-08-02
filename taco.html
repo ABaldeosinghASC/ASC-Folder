@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <head>
-  <link href="/normalize.css" rel="stylesheet"> 
   <title>Anthony Baldeosingh</title>
   <style>
     header {
@@ -28,16 +27,51 @@
       display: inline;
       padding: 0px 10px 0px 10px;
     }
-    </style>
+    #myContainer {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: yellow;
+    }
+    #myAnimation {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: red;
+    }
+  </style>
 </head>
 <body>
   <header>
     <img src="http://www.dafont.com/forum/attach/orig/4/1/415845.png?1">
     <h1>Anthony's Website</h1>
     <ul>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Coding Experience</a></li>
-      <li><a href="#">Gifs my good man?</a></li>
+      <li><a href="https://www.instagram.com/3_asap/">About Me</a></li>
+      <li><a href="https://github.com/ABaldeosinghASC/ASC-Folder">My GitHuB</a></li>
+      <li><a href="http://giphy.com/">Gifs my good man?</a></li>
     </ul>
   </header>
+  <div>
+    <button onclick="myMove()">Click Me</button><div id ="myAnimation"></div>
+    <script>
+    function myMove() {
+      var elem = document.getElementById("myAnimation");
+      var pos = 0;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 1200) {
+          clearInterval(id);
+        } else {
+          pos++;
+          
+          elem.style.left = pos + 'px';
+        }
+      }
+    }
+    </script>
+  </div>
+  <div>
+    <script src="Mash.js"></script>
+  </div>
+
 </body>
